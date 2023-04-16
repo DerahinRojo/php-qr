@@ -1,5 +1,5 @@
 <?php
-if (empty($_GET["url"])) {
+if (!empty($_GET["url"])) {
     require_once ('phpqrcode/qrlib.php'); // Asegúrate de incluir el archivo QRcode.php o la ruta correcta
 
     // Generar la imagen QR en memoria
